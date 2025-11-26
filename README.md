@@ -9,6 +9,12 @@ Dans `config/_default/config.yaml`
 ```yaml
 theme: nig-theme
 _merge: deep
+theme: nig-theme
+_merge: deep
+params:
+  plausible: numeriqueinteretgeneral.org
+  debug:
+     productionUrl: "https://www.numeriqueinteretgeneral.org"
 ```
 
 Dans `assets/sass/main.sass`
