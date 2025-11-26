@@ -2,7 +2,7 @@
 
 Pour ajouter le thème, en ligne de commande 
 ```shell
-git submodule add git@github.com:osunyorg/nig-theme.git themes/nig
+git submodule add git@github.com:osunyorg/nig-theme.git themes/nig-theme
 ```
 
 Dans `config/_default/config.yaml`
