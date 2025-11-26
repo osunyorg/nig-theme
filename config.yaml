@@ -19,6 +19,9 @@ params:
   persons:
     single:
       backlinks: true
+  home:
+    head:
+      title: site
   image_sizes:
     design_system:
       lightbox:
