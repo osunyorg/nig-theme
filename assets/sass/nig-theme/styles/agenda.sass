@@ -1,0 +1,29 @@
+// Old style events page
+.events__page,
+.exhibitions__page
+    .hero
+        .content
+            @include media-breakpoint-up(desktop)
+                flex-wrap: nowrap
+                figure
+                    order: 2
+                    width: columns(5)
+                .hero-text,
+                .hero-text:has(.taxonomies-single) 
+                    width: columns(7)
+                    h1
+                        width: 100%
+                        margin-right: 0
+                    .hero-actions
+                        margin-left: 0
+        .taxonomies-single a
+            @include link($hero-color)
+
+.events__page 
+    .hero 
+        h1 
+            span
+                font-style: italic
+                color: white
+.event-subtitle
+    font-style: italic

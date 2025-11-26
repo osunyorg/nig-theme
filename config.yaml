@@ -1,0 +1,43 @@
+theme: osuny
+_merge: deep
+params:
+  plausible: numeriqueinteretgeneral.org
+  breadcrumb:
+    position: after-hero
+  search:
+    active: true
+  summary:
+    position: hero
+  logo:
+    header: "/assets/images/logo-blanc.svg"
+    footer: "/assets/images/logo-blanc.svg"
+  seo:
+    title:
+      separator: "•"
+  organizations:
+    single:
+      backlinks: true
+  persons:
+    single:
+      backlinks: true
+  image_sizes:
+    design_system:
+      lightbox:
+        disabled: true
+      hero:
+        mobile:   400
+        tablet:   1024
+        desktop:  1920
+    sections:
+      home:
+        hero:
+          mobile:   400
+          tablet:   1024
+          desktop:  1920
+      pages:
+        hero:
+          mobile:   400
+          tablet:   1024
+          desktop:  1920
+  debug:
+     productionUrl: "https://www.numeriqueinteretgeneral.org"

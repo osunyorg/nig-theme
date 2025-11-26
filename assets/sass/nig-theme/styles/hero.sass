@@ -1,0 +1,64 @@
+.hero
+    background-image: url(/assets/images/background.jpg)
+    background-size: cover
+    background-position: top
+    .content
+        @include media-breakpoint-down(desktop)
+            display: flex !important
+            flex-direction: column-reverse !important
+            figure
+                figcaption
+                    background: none
+            .hero-text
+                padding-top: $spacing-4
+        .hero-text
+            margin-top: 0 !important
+            h1,
+            hgroup,
+            .has-lead > p
+                color: white 
+            .has-lead > p
+                font-style: italic
+        figure
+            figcaption
+                &::before
+                    background: none
+                    color: white
+                .credit
+                    background: none
+                    *
+                        color: white
+        .hero-actions
+            padding-top: $spacing-3
+            .dropdown-share
+                button
+                    background: white
+    &:not(.hero--with-image)
+        @include media-breakpoint-up(desktop)
+            .content
+                .hero-text
+                    width: 100%
+                    h1,
+                    hgroup
+                        max-width: columns(10)
+
+.page__home
+    .hero
+        .content
+            .hero-text
+                h1,
+                hgroup
+                    @include media-breakpoint-down(md)
+                        margin-top: $spacing-5
+                    @include media-breakpoint-up(md)
+                        max-width: 100%
+                    @include media-breakpoint-up(xl)
+                        max-width: columns(10) 
+                    @include media-breakpoint-up(xxl)
+                        max-width: columns(8) 
+
+.hero 
+    + .breadcrumb-container
+        margin-bottom: $spacing-3
+    + .container
+        margin-top: 0
